@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    .navbar{
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      width: 20%%;
+      height: 20%;
+      cursor: pointer;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+      font-family: sans-serif;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase;
+      font-family: cursive;
+    }
+   .navbar ul li a:hover {
+
+    color: #f44336;
+    transition: 0.5s;
+   }
+       .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background-image: url("assets/images/imagee.jpg");
+  background-repeat: no-repeat;
+}
+
+.two {
+  grid-column: 3;
+  grid-row: 1 / 5;
+  background-color: black;
+}
+.two h1 {
+  color: orange;
+  padding-left: 20px;
+}
+.two h3 {
+  color: white;
+  padding-left: 20px;
+  opacity: .8;
+
+}
+.two p {
+  color: white;
+  opacity: .5;
+  padding-left: 20px;
+  font-family: sans-serif;
+}
+.two hr {
+  opacity: .5;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.three {
+  grid-column: 1;
+  grid-row: 3 / 5;
+  background-color: white;
+}
+.three h1 {
+  font-family: sans-serif;
+  font-size: 55px;
+  text-align: center;
+}
+.four {
+  grid-column: 2 ;
+  grid-row: 3  / 5;
+  background-color: white;
+}
+.four h3 {
+  font-size: 20px;
+  opacity: .3;
+}
+.read {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  min-height: 50px;
+  min-width: 60px;
+  border: none;
+ padding: 14px 40px;
+}
+.column{
+  
+ 
+ float: left;
+  width: 15%;
+  padding: 10px;
+  height: 200px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.seven h1 {
+  opacity: .5;
+  font-size: 40px;
+}
+.seven h4 {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-decoration-style: none;
+  text-underline-offset: none;
+}
+.seven h4:hover {
+
+    color: #f44336;
+    transition: 0.5s;
+}
+.seven p {
+  opacity: .5;
+  font-family: sans-serif;
+}
+.nine h1 {
+  opacity: .4;
+  font-size: 40px;
+
+}
+.nine h4 {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.nine h4:hover {
+   color: #f44336;
+    transition: 0.5s;
+}
+.nine p{
+  opacity: .5;
+  font-family: sans-serif;
+}
+.eleven h1 {
+  opacity: .4;
+  font-size: 40px;
+
+}
+.eleven h4{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.eleven h4:hover {
+   color: #f44336;
+    transition: 0.5s;
+}
+.eleven p{
+  opacity: .5;
+  font-family: sans-serif;
+}
+
+  </style>
+</head>
+<body>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="assets/images/logo.svg" class="logo" style="background-repeat: no-repeat;">
+        <ul>
+         
+          
+
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> New</a></li>
+          <li><a href="#"> Popular</a></li>
+          <li><a href="#"> Trending</a></li>
+          <li><a href="#"> Categories</a></li>
+        </ul>
+      </div>
+      
+          
+        </div>
+        <div class="wrapper">
+  <div class="one">
+    
+  </div>
+  <div class="two">
+    <h1> New</h1>
+    <br />
+    <h3> Hydrogen VS Electric Cars </h3>
+    <p>Will hydrogen filled cars ever catch up to EVs?</p>
+    <br />
+    <hr>
+    <br />
+    <h3> The Downsides of AI Artistry</h3>
+    <p>What are the possible adverse effects of on-demand AI image generation?</p>
+    <br />
+    <hr>
+    <br />
+    <h3>Is VC funding  Drying Up?</h3>
+    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+
+
+  </div>
+  <div class="three">
+    <h1><b> The Bright</b> <br /><b>Future of</b> <br /><b> Web 3.0 ?</b></h1>
+  </div>
+  <div class="four">
+    <h3>We dive into the evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really <br /> fufilling  its promise ?</h3>
+    <a href="#"><button class="read" value="Read More">READ MORE</button></a>
+  </div>
+ </div> 
+ <div class="row">
+  <div class="five"></div>
+    
+  <div class="column" style="background-image:url(assets/images/retro.jpg) ; background-repeat: no-repeat;" > Six</div>
+  <div class="column"> 
+    <div class="seven">
+    <h1>01</h1>
+    
+   <a href="#" style="text-decoration: none;color: black;"> <h4> Reviving Retro PCs </h4></a>
+    
+    <p>What will happen when old PCs are given mordern updates?</p>
+  </div>
+  </div>
+  <div class="column" style="background-image:url(assets/images/keys.jpg); background-repeat: no-repeat;"> </div>
+  <div class="column">
+    <div class="nine">
+      <h1>02</h1>
+       <a href="#" style="text-decoration: none;color: black;"><h4>Top 10 Laptops of 2022</h4></a>
+      <p>Our best picks for various needs and budget</p>
+    </div>
+  </div>
+  <div class="column" style="background-image: url(assets/images/pads.jpg); background-repeat: no-repeat;">
+    
+    </div>
+  
+  <div class="column">
+    <div class="eleven">
+      <h1>03</h1>
+       <a href="#" style="text-decoration: none;color: black;"><h4>The Growth of Gaming</h4></a>
+      <p>How the pandemic has sparked so much opportunities</p>
+    </div>
+  </div>
+</div>
+  
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
